@@ -888,10 +888,13 @@ a:hover .page-title:hover {
 	.banner-izquierda{
 		width: 50% !important;
 		float: left;
+		display: inline-block;
+		position: absolute;
 	}
 	.sponsors-derecha{
 		width: 50% !important;
 		float: right;
+		display: inline-block;
 	}
 
 }
