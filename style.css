@@ -862,12 +862,9 @@ a:hover .page-title:hover {
 	width: auto !important;
 }
 
-.comunidades-e-sportspy{
-	background-color: #BF5454;
-}
 .comunidades-e-sportspy .slideshow_pagination_center{
 	margin-top: 15px !important;
-	background-color: #BF5454;
+	background-color: rgba(0, 0, 0, 0.77);
 	width: 100%;
     padding: 4px;
 }
