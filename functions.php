@@ -129,6 +129,34 @@ endif;
  */
 function rookie_widgets_init() {
 	register_sidebar( array(
+		'name'          => __( 'Comunidades', 'rookie' ),
+		'id'            => 'comunidades-e-sportspy',
+		'description'   => 'Para la plantilla e-sportspy',
+		'before_widget' => '<aside id="%1$s" class="widget comunidades-e-sportspy %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Banner izquierda', 'rookie' ),
+		'id'            => 'banner-izquierda',
+		'description'   => 'Para las plantillas (Comunidades, Torneos)',
+		'before_widget' => '<aside id="%1$s" class="widget banner-izquierda %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Sponsors derecha', 'rookie' ),
+		'id'            => 'sponsors-derecha',
+		'description'   => 'Para las plantillas (Comunidades, Torneos)',
+		'before_widget' => '<aside id="%1$s" class="widget sponsors-derecha %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+
+	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'rookie' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
