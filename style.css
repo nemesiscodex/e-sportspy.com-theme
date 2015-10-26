@@ -889,11 +889,10 @@ a:hover .page-title:hover {
 		width: 50% !important;
 		float: left;
 		display: inline-block;
-		position: absolute;
 	}
 	.sponsors-derecha{
 		width: 50% !important;
-		float: right;
+		float: inherit;
 		display: inline-block;
 	}
 
