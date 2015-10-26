@@ -52,11 +52,9 @@ function rookie_header_area() {
 			<?php } elseif ( 'menu' == $section ) { ?>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', 'rookie' ); ?></button>
-					<li id="home-menu-button" class="menu-item menu-item-type-custom menu-item-object-custom">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img id="home-menu-button-img" src="<?php echo $logo; ?>" alt="<?php bloginfo( 'name' ); ?>">
-						</a>
-					</li>
+					<a id="site-logo-anchor" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img id="site-logo-img" src="<?php echo $logo; ?>" alt="<?php bloginfo( 'name' ); ?>">
+					</a>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					<?php if ( array_key_exists( 'nav_menu_search', $options ) && $options['nav_menu_search'] ) get_search_form(); ?>

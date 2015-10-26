@@ -862,7 +862,10 @@ a:hover .page-title:hover {
 	width: auto !important;
 }
 
-#home-menu-button-img{
+#site-logo-anchor{
+	float: left;
+}
+#site-logo-img{
 	height: 20px !important;
 	width: auto !important;
 }
