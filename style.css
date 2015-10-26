@@ -866,13 +866,13 @@ a:hover .page-title:hover {
 	background-color: #BF5454;
 }
 .comunidades-e-sportspy .slideshow_pagination_center{
-	margin-top: 15px;
+	margin-top: 15px !important;
 	background-color: #BF5454;
 	width: 100%;
     padding: 4px;
 }
 .comunidades-e-sportspy .slideshow_pagination_center ul{
-    margin-left: 48%;
+    margin-left: 48% !important;
 }
 
 #site-logo-anchor{
