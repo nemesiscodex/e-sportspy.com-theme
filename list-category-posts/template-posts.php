@@ -62,6 +62,9 @@ while ( have_posts() ):
   //Show the title and link to the post:
   $lcp_display_output .= $this->get_post_title($post, 'h5', 'espy-post-title');
 
+  //Show category link
+  $lcp_display_output .= $this->get_category_link($post, 'div', 'espy-post-category');
+
   //Show comments:
   $lcp_display_output .= $this->get_comments($post);
 
