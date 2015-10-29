@@ -686,7 +686,7 @@ function rookie_footer_copyright() {
 function rookie_footer_credit() {
 	?>
 	<div class="site-credit">
-		<a href="http://themeboy.com/"><?php printf( __( 'Designed by %s', 'rookie' ), 'ThemeBoy' ); ?></a>
+		<a href="http://github.com/nemesiscodex/"><?php printf( __( 'Modified Theme by %s', 'rookie' ), 'nemesiscodex' ); ?></a>
 	</div><!-- .site-info -->
 	<?php
 }
