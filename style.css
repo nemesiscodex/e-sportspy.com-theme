@@ -901,3 +901,26 @@ a:hover .page-title:hover {
 	height: 20px !important;
 	width: auto !important;
 }
+
+
+/* catlist post template */
+.espy-post-element{
+    text-align: left;
+    border: 2px solid rgba(255,255,255,0.5);
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 4px 0px rgba(255,255,255,0.2);
+    padding: 10px;
+}
+.espy-post-element div:first-child {
+    display:inline-block;
+    width: 100px;
+    margin-right: 10px;
+    float: left;
+}
+.espy-post-title{
+    display:inline-block;
+}
+
+.espy-post-excerpt p{
+    margin-bottom: 3px;
+}

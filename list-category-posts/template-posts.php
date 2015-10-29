@@ -60,7 +60,7 @@ while ( have_posts() ):
   $lcp_display_output .= $this->get_thumbnail($post, 'div', 'espy-post-thumbnail');
 
   //Show the title and link to the post:
-  $lcp_display_output .= $this->get_post_title($post, 'h3', 'espy-post-title');
+  $lcp_display_output .= $this->get_post_title($post, 'h5', 'espy-post-title');
 
   //Show comments:
   $lcp_display_output .= $this->get_comments($post);
