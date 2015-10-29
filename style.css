@@ -910,6 +910,7 @@ a:hover .page-title:hover {
     margin-bottom: 5px;
     box-shadow: 2px 2px 4px 0px rgba(255,255,255,0.2);
     padding: 10px;
+    min-height: 130px;
 }
 .espy-post-element div:first-child {
     display:inline-block;
