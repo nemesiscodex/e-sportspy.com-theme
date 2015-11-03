@@ -66,19 +66,19 @@ while ( have_posts() ):
   $lcp_display_output .= $this->get_category_link($post, 'div', 'espy-post-category');
 
   //Show comments:
-  $lcp_display_output .= $this->get_comments($post);
+  $lcp_display_output .= $this->get_comments($post, 'div', 'espy-post-comments');
 
   //Show date:
-  $lcp_display_output .= ' ' . $this->get_date($post);
+  $lcp_display_output .= ' ' . $this->get_date($post, 'div', 'espy-post-date');
 
   //Show date modified:
-  $lcp_display_output .= ' ' . $this->get_modified_date($post);
+  $lcp_display_output .= ' ' . $this->get_modified_date($post, 'div', 'espy-post-modified-date');
 
   //Show author
-  $lcp_display_output .= $this->get_author($post);
+  $lcp_display_output .= $this->get_author($post, 'div', 'espy-post-author');
 
   //Custom fields:
-  $lcp_display_output .= $this->get_custom_fields($post);
+  $lcp_display_output .= $this->get_custom_fields($post, 'div', 'espy-post-custom');
 
 
   /**
@@ -94,7 +94,7 @@ while ( have_posts() ):
   $lcp_display_output .= $this->get_excerpt($post, 'div', 'espy-post-excerpt');
 
   // Get Posts "More" link:
-  $lcp_display_output .= $this->get_posts_morelink($post);
+  $lcp_display_output .= $this->get_posts_morelink($post, 'div', 'espy-post-morelink');
 
   //Close li tag
   $lcp_display_output .= '</div>';
