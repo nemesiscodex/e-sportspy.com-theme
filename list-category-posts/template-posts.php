@@ -115,7 +115,7 @@ $lcp_display_output .= $this->get_pagination();
 $lcp_display_output .= "<script>$('.espy-post-element')";
 $lcp_display_output .= ".each(function(idx, el){";
 $lcp_display_output .= "var \$el = $(el);";
-$lcp_display_output .= "\$el.attr('onclick', 'window.location.href = \"' + \$el.find('.espy-post-title a') + '\"'";
-$lcp_display_output .= ".first().attr('href')) }); </script>";
+$lcp_display_output .= "\$el.attr('onclick', 'window.location.href = \"' + \$el.find('.espy-post-title a')";
+$lcp_display_output .= ".first().attr('href') + '\"') }); </script>";
 
 $this->lcp_output = $lcp_display_output;
