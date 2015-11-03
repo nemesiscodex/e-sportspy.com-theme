@@ -54,7 +54,7 @@ while ( have_posts() ):
   the_post();
 
   //Start a List Item for each post:
-  $lcp_display_output .= "<a class=\"espy-post-element\">";
+  $lcp_display_output .= "<div class=\"espy-post-element\">";
 
   //Post Thumbnail
   $lcp_display_output .= $this->get_thumbnail($post, 'div', 'espy-post-thumbnail');
@@ -97,7 +97,7 @@ while ( have_posts() ):
   $lcp_display_output .= $this->get_posts_morelink($post, 'div', 'espy-post-morelink');
 
   //Close li tag
-  $lcp_display_output .= '</a>';
+  $lcp_display_output .= '</div>';
 endwhile;
 
 // Close the wrapper I opened at the beginning:
@@ -115,7 +115,7 @@ $lcp_display_output .= $this->get_pagination();
 $lcp_display_output .= "<script>$('.espy-post-element')";
 $lcp_display_output .= ".each(function(idx, el){";
 $lcp_display_output .= "var \$el = $(el);";
-$lcp_display_output .= "\$el.attr('href', \$el.find('.espy-post-title a')";
+$lcp_display_output .= "\$el.attr('onclick', 'window.location.href = \"' + \$el.find('.espy-post-title a') + '\"'";
 $lcp_display_output .= ".first().attr('href')) }); </script>";
 
 $this->lcp_output = $lcp_display_output;
