@@ -112,10 +112,10 @@ $lcp_display_output .= $this->get_category_count();
 //Pagination
 $lcp_display_output .= $this->get_pagination();
 
-$lcp_display_output .= "<script>$(document).ready(function(){$('.espy-post-element')";
+$lcp_display_output .= "<script>jQuery('.espy-post-element')";
 $lcp_display_output .= ".each(function(idx, el){";
-$lcp_display_output .= "var \$el = $(el);";
+$lcp_display_output .= "var \$el = jQuery(el);";
 $lcp_display_output .= "\$el.attr('onclick', 'window.location.href = \"' + \$el.find('.espy-post-title a')";
-$lcp_display_output .= ".first().attr('href') + '\"') }); }); </script>";
+$lcp_display_output .= ".first().attr('href') + '\"') }); </script>";
 
 $this->lcp_output = $lcp_display_output;
