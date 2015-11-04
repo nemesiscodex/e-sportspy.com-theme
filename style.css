@@ -929,3 +929,7 @@ a:hover .page-title:hover {
 .espy-post-excerpt p{
     margin-bottom: 3px;
 }
+
+.entry-thumbnail{
+	margin-bottom: 110px;
+}
